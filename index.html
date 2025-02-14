@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center">
+            <input id="cityInput" type="text" placeholder="Enter city" class="w-3/4 p-2 border rounded-lg focus:outline-none">
+            <button id="searchBtn" class="p-2 bg-blue-500 text-white rounded-lg">Search</button>
+        </div>
+        <div id="weather" class="text-center mt-4 hidden">
+            <h2 id="cityName" class="text-2xl font-bold"></h2>
+            <img id="weatherIcon" class="mx-auto my-2" />
+            <p id="temperature" class="text-xl"></p>
+            <p id="weatherType" class="text-lg"></p>
+        </div>
+        <div id="forecast" class="mt-4 hidden">
+            <h3 class="text-lg font-bold">Hourly Forecast</h3>
+            <div id="hourlyForecast" class="flex overflow-x-auto gap-4 mt-2 p-2"></div>
+        </div>
+        <button id="toggleTheme" class="mt-4 p-2 bg-gray-500 text-white rounded-lg w-full">Toggle Dark Mode</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body.dark-mode {
+    background-color: #151516;
+    color: #4c738d;
+}
+
+.forecast-item {
+    text-align: center;
+    padding: 10px;
+    background: #a3c2e0;
+    border-radius: 8px;
+}
+
+.dark-mode .forecast-item {
+    background: #2d3748;
+}
